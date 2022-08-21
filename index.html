@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="password-container">
+      <h1>Generate a secure password</h1>
+      <div class="text-area"></div>
+
+      <div class="range">
+        <input type="range" min="6" max="12" class="input-range" />
+        <span class="input-range-info"></span>
+      </div>
+      <div class="checkbox-container">
+        <label for="number-checkbox">
+          <input type="checkbox" id="number-checkbox" checked disabled />
+          Numbers (always enabled)</label
+        >
+        <label for="lowletter-checkbox">
+          <input type="checkbox" id="lowletter-checkbox" />
+          Lowercase
+        </label>
+        <label for="unletter-checkbox">
+          <input type="checkbox" id="upletter-checkbox" />
+          Uppercase
+        </label>
+        <label for="symbol-checkbox">
+          <input type="checkbox" id="symbol-checkbox" />
+          Symbol
+        </label>
+      </div>
+      <button type="button" class="generate-button">Generate</button>
+    </div>
+
+    <div class="container-color-chooser">
+      <h1>Color chooser</h1>
+      <div class="range-container">
+        <div class="range-color">
+          R
+          <label for="range-red">
+            <input type="range" min="0" max="255" value="120" id="range-red" />
+            <span class="info-range-red"></span>
+          </label>
+        </div>
+
+        <div class="range-color">
+          G
+          <label for="range-green">
+            <input type="range" min="0" max="255" value="160" id="range-green" />
+            <span class="info-range-green"></span>
+          </label>
+        </div>
+
+        <div class="range-color">
+          B
+          <label for="range-blue">
+            <input type="range" min="0" max="255" value="100" id="range-blue" />
+            <span class="info-range-blue"></span>
+          </label>
+        </div>
+        <div class="color-window"></div>
+        <div class="color-window-value">Dec: <span class="dec"></span></div>
+        <div class="color-window-value">Hex: <span class="hex"></span></div>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
